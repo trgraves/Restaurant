@@ -1,0 +1,78 @@
+/***********************
+	Navbar
+***********************/
+
+#navigation a {
+	text-decoration: none;
+}
+
+#navigation a:hover {
+	font-weight: bold;
+}
+
+.navbar{
+	background: #4A5154 !important;
+}
+
+.nav li a {
+    background-color: #59A3C7 !important;
+		color: #0C619D !important;
+}
+
+.nav li a:visited {
+	color: #caeaf7 !important;
+}
+
+.navbar-header a {
+	color: #0C619D !important;
+}
+
+.navbar-header a:visited {
+	color: #caeaf7 !important;
+}
+
+/***********************
+	Restaurant Title & Body
+***********************/
+
+#title {
+	font-family: 'Sunflower', serif;
+	padding-top: 10px;
+}
+
+#main {
+	background-color: #caeaf7;
+	padding-top: 10px;
+}
+
+body {
+	background-color: #79cbeb;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+/***********************
+	jumbotron
+***********************/
+
+.jumbotron {
+	background-color: #e6f5f7 !important;
+}
+
+/***********************
+	caraousel
+***********************/
+
+#newsCarousel {
+	padding: 15px 10px;
+}
+
+#newsCarousel img {
+	
+	height: 350px;
+	min-width: 100%;
+	object-fit: cover;
+}
+
+/************************
+	Form
+************************/

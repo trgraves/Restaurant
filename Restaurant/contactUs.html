@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<title>Contact Us</title>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/restaurantStyles.css">
+		<!--<script type="text/javascript" src="validation.js"></script>-->
+		<link href="https://fonts.googleapis.com/css?family=Sunflower:300" rel="stylesheet">
+		<style>
+			label {
+				font-weight: bold;
+			}
+
+			form {
+				padding-bottom: 25px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="title" class="container">
+			<h1>Vera's Diner</h1>
+		</div>
+		<nav id="navigation" class="navbar navbar-expand-md">
+			<div class="container">
+				<!--<div class="navbar-header">
+					<a href="index.html" class="navbar-brand">Brand</a>
+				</div>-->
+				<ul class="nav nav-tabs mr-auto">
+					<li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+					<li class="nav-item"><a class="nav-link active" href="contactUs.html">Contact Us</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div id="main" class="container">
+			<div id="contactForm">
+				<form action="submit.html" method="POST" class="needs-validation" novalidate>
+					<div class="form-group container">
+						<label for="name">Name:</label>
+						<input type="text" id="name" name="name" class="form-control" required>
+					</div>
+
+					<div class="form-group container">
+						<label for="email">Email:</label>
+						<input type="text" id="email" name="email" class="form-control">
+					</div>
+
+					<div class="form-group container">
+						<label for="phone">Phone:</label>
+						<input type="text" id="phone" name="phone" class="form-control">
+					</div>
+
+					<div class="form-group container">
+						<label for="inquiry">Reason for Inquiry:</label>
+						<select id="inquiry" name="inquiry" class="form-control">
+							<option value="catering" selected>Catering</option>
+							<option value="privateParty">Private Party</option>
+							<option value="feedback">Feedback</option>
+							<option value="other">Other</option>
+						</select>
+					</div>
+
+					<div class="form-group container">
+						<label for="info">Additional Information:</label>
+						<textarea id="info" class="form-control"></textarea>
+					</div>
+
+					<div class="form-group container">
+						<label class="form-check-label">Have you been to the restaurant?</label>
+						<div class="form-check form-check-inline">
+							<label for="choice2" class="form-check-label">Yes</label>
+							<input type="radio" id="choice2" name="questionaire" value="Yes" class="form-check-input">
+							<label for="choice1" class="form-check-label">No</label>
+							<input type="radio" id="choice1" name="questionaire" value="No" class="form-check-input">
+						</div>
+					</div>
+
+					<div class="form-group container">
+						<label class="form-check-label">Best days to contact you:</label>
+						<div class="form-check form-check-inline">
+							<label for="monday" class="form-check-label">M</label>
+							<input type="checkbox" id="monday" name="days" value="monday" class="form-check-input">
+							<label for="tuesday" class="form-check-label">T</label>
+							<input type="checkbox" id="tuesday" name="days" value="tuesday" class="form-check-input">
+							<label for="wednesday" class="form-check-label">W</label>
+							<input type="checkbox" id="wednesday" name="days" value="wednesday" class="form-check-input">
+							<label for="thursday" class="form-check-label">Th</label>
+							<input type="checkbox" id="thursday" name="days" value="thursday" class="form-check-input">
+							<label for="friday" class="form-check-label">F</label>
+							<input type="checkbox" id="friday" name="days" value="friday" class="form-check-input">
+						</div>
+					</div>
+
+					<div class="container">
+						<input type="submit" name="submit" value="Send Request">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div id="footer" class="container">
+			<hr/>
+			<footer>
+				<p>1234 Bardstown Road, Louisville, Kentucky, 40225</p>
+				<p>502-555-5555</p>
+			</footer>
+		</div>
+	</body>
+</html>
